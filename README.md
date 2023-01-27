@@ -1,12 +1,12 @@
 # <a href="https://github.com/fwicotex/ProjetSim204">SpeakSmart</a>
 
-##Description
+## Description
 
-###L'équipe
+### L'équipe
 Mohamed Amine, etc
 
-##Technologies
+## Technologies
 
-##Plan de travail
+## Plan de travail
 
 <img src = "image.jpg">

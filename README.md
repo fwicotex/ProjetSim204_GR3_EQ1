@@ -14,6 +14,9 @@ SpeakSmart permettera aux utilisateurs d'apprendre une nouvelle langue et de con
 ### L'innovation
 Apprentissage de langues et de culture à travers des activités interactives.
 
+
+
+
 ### Cas d'utilisation
 
 

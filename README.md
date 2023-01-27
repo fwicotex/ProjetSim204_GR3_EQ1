@@ -12,7 +12,7 @@ Site web qui offre la possibilité aux utilisateurs de se connecter à travers G
 SpeakSmart permettera aux utilisateurs d'apprendre une nouvelle langue et de connaitre davantage sur la culture d'un pays au choix en proposant des activités interractives.
 
 ### L'innovation
-Apprentissage de langues et de culture à travers des activités interactives.
+Apprentissage de langues et de cultures à travers des activités interactives.
 
 ### Cas d'utilisation
 

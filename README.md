@@ -3,7 +3,7 @@
 ## Description
 
 ### L'équipe
-Mohamed Amine, etc
+Karl Rizk, Mohamed Amine M'hammedi, Zineddine Abdel Brahimi, Benjamin Gurlekian, Joseph Keshishian
 
 ### L'idée
 Site web qui offre la possibilité aux utilisateurs de se connecter à travers Google ou Facebook et qui propose des séries d’exercices interactifs qui leur permet d’apprendre la langue d’un pays de leur choix avec des repères culturels pour faciliter leur intégration dans ce pays et dans sa culture. Les exercices seront adaptés selon le niveau de langue de l’utilisateur (débutant, intermédiaire, avancé, etc.) et selon son progrès.

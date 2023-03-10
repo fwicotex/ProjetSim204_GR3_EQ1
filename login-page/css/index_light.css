@@ -8,11 +8,11 @@ body{
     font-family: 'Poppins', sans-serif;
     overflow: hidden;
 	background-color: white;
-    color: #1d2b54;
+	color: #1d2b54;
 }
 
 .wave{
-	position: fixed;
+	position: fixed; 
 	bottom: 0;
 	left: 0;
 	height: 100%;
@@ -32,6 +32,21 @@ body{
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
+}
+
+.theme{
+	cursor: pointer;
+	background-color: transparent;
+	border : none;
+	fill : #1d2b54;
+	position: fixed;
+	top: 0;
+	right : 0;
+	align-items: flex-end;
+	height: 2%;
+	width: 2%;
+	margin-right: 1rem;
+	margin-top: 1rem;
 }
 
 .login-content{
@@ -66,7 +81,7 @@ form{
 
 .login-content h2{
 	margin: 15px 0;
-	color: white;
+	color: #1d2b54;
 	text-transform: uppercase;
 	font-size: 2.9rem;
 }
@@ -105,7 +120,7 @@ form{
 	left: 10px;
 	top: 50%;
 	transform: translateY(-50%);
-	color: #fff;
+	color: #999;
 	font-size: 18px;
 	transition: .3s;
 }
@@ -116,7 +131,7 @@ form{
 	bottom: -2px;
 	width: 0%;
 	height: 2px;
-	background-color : white;
+	background-color : #1d2b54;
 	transition: .4s;
 }
 
@@ -138,7 +153,7 @@ form{
 }
 
 .input-div.focus > .i > i{
-	color: white;
+	color: #1d2b54;
 }
 
 .input-div > div > input{
@@ -152,7 +167,7 @@ form{
 	background: none;
 	padding: 0.5rem 0.7rem;
 	font-size: 1.2rem;
-	color: #fff;
+	color: #1d2b54;
 	font-family: 'poppins', sans-serif;
 }
 
@@ -170,8 +185,14 @@ a{
 }
 
 a:hover{
-	color: white;
+	color: #1d2b54;
 }
+
+.signin{
+	display: flex;
+	justify-content: center;
+	font-size: 0.9rem;
+} 
 
 .btn{
 	display: block;
@@ -180,7 +201,7 @@ a:hover{
 	border-radius: 25px;
 	outline: none;
 	border: none;
-	background-image: linear-gradient(to right, #32be8f, #04b973, #32be8f);
+	background-image: linear-gradient(to right,#1d2b54,#3152b6,#1d2b54 );
 	background-size: 200%;
 	font-size: 1.2rem;
 	color: #fff;

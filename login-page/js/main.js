@@ -4,8 +4,28 @@ const style1 = document.getElementById('style1');
 const style2 = document.getElementById('style2');
 const button = document.getElementById('change-theme');
 const path = document.querySelector('svg path');
+const toggleBtn = document.querySelector('.toggle_btn')
+const toggleBtnIcon = document.querySelector('.toggle_btn i')
+const dropDownMenu = document.querySelector('.dropdown_menu')
 
 style1.disabled = true
+
+// Function to toggle the dropdown menu
+function toggleDropdownMenu() {
+	dropDownMenu.classList.toggle('open')
+	const isOpen = dropDownMenu.classList.contains('open')
+	toggleBtnIcon.classList = isOpen ? 'fa-solid fa-xmark' : 'fa-solid fa-bars'
+  }
+  
+  // Add event listener to close the menu when the screen width goes over a certain threshold
+  window.addEventListener('resize', () => {
+	if (window.innerWidth > 768 && dropDownMenu.classList.contains('open')) {
+	  toggleDropdownMenu()
+	}
+  })
+  
+  // Add event listener to toggle the menu when the button is clicked
+  toggleBtn.addEventListener('click', toggleDropdownMenu)
 
 function addcl(){
 	let parent = this.parentNode.parentNode;

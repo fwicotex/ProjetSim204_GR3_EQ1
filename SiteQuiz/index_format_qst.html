@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>MotPassant--Question d'initiationt</title>
+    <title>Document</title>
+</head>
+<body>
+
+     <!--Contenu du quiz en tant que tel-->
+
+     <div class="game-quiz-container">
+        
+
+        <div class="game-details-container">
+            <h1> Score  :  <span id="player-score"></span>  / 10</h1>
+            <h1>Question: <span id="question-num"></span>   / 12</h1>
+        </div>
+
+        <div class="contenu-questions">
+            <h1 id="affichage-qst"></h1>
+        </div>
+
+        <div class="jeu-option-contenu">
+
+            <div class="contenu-option" id="option-model">
+
+                <div class="model-de-contenu">
+                    <h1>Choisissez une option</h1>
+    
+                    <div class="modele-btn-contenu">
+                        <button onclick="closeOptionModal()">Continue</button>
+                    </div>
+    
+                </div>
+    
+            </div>
+    
+    
+            <span>
+                <input type="radio" id="optrion-1"  name="option" class="radio" value="optionA"/>
+                <label for="option-un" class="option" id="option-one-label"></label>
+            </span>
+    
+            <span>
+                <input type="radio" id="optrion-2"  name="option" class="radio" value="optionB"/>
+                <label for="option-deux" class="option" id="option-deux-label"></label>
+            </span>
+    
+            <span>
+                <input type="radio" id="optrion-3"  name="option" class="radio" value="optionC"/>
+                <label for="option-trois" class="option" id="option-trois-label"></label>
+            </span>
+    
+            <span>
+                <input type="radio" id="optrion-4"  name="option" class="radio" value="optionD"/>
+                <label for="option-quatre" class="option" id="option-quatre-label"></label>
+            </span>
+
+        </div>
+
+        <div class="btn-suivant-contenu">
+            <button onclick="handleNextQuestion()"> Question Suivante</button>
+        </div>
+
+    </div>
+
+
+
+    <script src="index.js"></script>
+    
+</body>
+</html>

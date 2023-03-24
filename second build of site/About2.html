@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>MotsPassant - About Us</title>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo"><a href="Home.html">MotsPassant</a></div>
+            <ul class="menu">
+                <li><a href="Home.html"> Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="services">Services</a></li>
+                <li><a href="contact">Contact</a></li>
+            </ul>
+            <a href="#" class="action_btn">Get Started</a>
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+        <div class="dropdown_menu">
+            <li><a href="Home.html"> Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="services">Services</a></li>
+            <li><a href="contact">Contact</a></li>
+            <li><a href="#" class="action_btn">Get Started</a></li>
+        </div>
+    </header>
+    <main>
+        <section id="home">
+            <h1>About us</h1>
+            <p>
+                Nous sommes une entreprise passionnée par la création de solutions innovantes pour aider les gens à atteindre </br> 
+                leurs objectifs et améliorer leur vie. Nous sommes convaincus que la technologie peut être utilisée pour résoudre </br>
+                les problèmes les plus pressants de notre époque, et c'est pour cette raison que nous investissons notre temps et notre </br> 
+                énergie dans la recherche et le développement de nouvelles idées.</p>
+
+            <p>Notre équipe est composée d'experts dans des domaines tels que l'informatique, l'ingénierie, la science des données et la psychologie, </br>
+                qui travaillent ensemble pour concevoir des produits et des services de qualité supérieure. Nous sommes fiers de créer des solutions qui </br>
+                non seulement résolvent les problèmes de nos clients, mais qui ont également un impact positif sur la société dans son ensemble.
+            </p>
+            <p>
+              Nous sommes également conscients de notre responsabilité envers notre communauté et l'environnement, et nous cherchons constamment des moyens <br>
+             de minimiser notre impact environnemental et de contribuer au bien-être des personnes qui nous entourent.  
+            </p>
+            <p>
+                Nous sommes ravis de faire partie de cette aventure et nous espérons que nos produits et services vous aideront à atteindre vos objectifs et à améliorer votre vie. <br>
+                Merci de nous avoir choisis.
+            </p>
+            <p>Développé par Karl Rizk, Joseph Keshishian, Benjamin Gurlekian, Zineddine Abdel Brahimi et Mohamed Amine M'hammedi.
+            </p>
+        </section>
+    </main>
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+        const dropDownMenu = document.querySelector('.dropdown_menu')
+
+        toggleBtn.onclick = function () {
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+
+            toggleBtnIcon.classList = isOpen
+            ? 'fa-solid fa-xmark'
+            : 'fa-solid fa-bars'
+        }
+    </script>
+</body>
+</html>

@@ -1,12 +1,19 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+
 body{
-    background:#a5c2e1 ;
+    
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 800 400'%3E%3Cdefs%3E%3CradialGradient id='a' cx='396' cy='281' r='514' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23068400'/%3E%3Cstop offset='1' stop-color='%23302D33'/%3E%3C/radialGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='400' y1='148' x2='400' y2='333'%3E%3Cstop offset='0' stop-color='%236E87FF' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%236E87FF' stop-opacity='0.5'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect fill='url(%23a)' width='800' height='400'/%3E%3Cg fill-opacity='0.4'%3E%3Ccircle fill='url(%23b)' cx='267.5' cy='61' r='300'/%3E%3Ccircle fill='url(%23b)' cx='532.5' cy='61' r='300'/%3E%3Ccircle fill='url(%23b)' cx='400' cy='30' r='300'/%3E%3C/g%3E%3C/svg%3E");
+    
+    background-attachment: fixed;
+    background-size: cover; ;
     width: 100%;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
 
    
 
@@ -129,54 +136,211 @@ body{
 
 
 .game-quiz-container{
-width: 40rem;
-height: 30rem;
-background-color:azure ;
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: space-around;
-border-radius: 35px;
-}
-
-.game-details-container{
-    width: 80%;
-    height: 4rem;
+    width: 70rem;
+    height: 50rem;
+    background-color:azure ;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.game-details-container h1 {
-    font-size: 1.2rem;
-}
-
-.contenu-questions{
-    width: 80%;
-    height: 8rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 2px blue;
-    border-radius: 25px;
-}
-
-.contenu-questions h1{
-    font-size: 1.1rem;
-    text-align: center;
-    padding: 3px;
-}
-
-.jeu-option-contenu{
-    width: 80%;
-    height: 12rem;
-    display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     align-items: center;
     justify-content: space-around;
-}
+    border-radius: 35px;
+    }
+    
+    .game-details-container{
+        width: 80%;
+        height: 4rem;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    .game-details-container h1 {
+        font-size: 1.2rem;
+    }
+    
+    .contenu-questions{
+        width: 80%;
+        height: 6rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 2px blue;
+        border-radius: 25px;
+    }
+    
+    .contenu-questions h1{
+        font-size: 1.1rem;
+        text-align: center;
+        padding: 3px;
+    }
+    
+    .jeu-option-contenu{
+    
+        width: 40%;
+        height:25rem;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .model-de-contenu{
+        
+        width: 100%;
+        height: 12rem;
+        font-size: smaller;
+        font-family: Georgia;
+        color:deepskyblue;
+        }
+
+    .jeu-option-contenu span{
+        width: 45%;
+        height: 6rem;
+        border: 3px solid rgb(32, 127, 168);
+        border-radius: 20px;
+      
+        overflow: hidden;
+    }
+
+    span label{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: all 0.60s ease;
+        color: #0072b5;
+    }
+
+   .jeu-option-contenu span:hover{
+        color: #9ab5df;
+        border: #2054bd solid 3.5px;
+    }
+    
 
 
+
+
+    .btn-suivant-contenu{
+        width: 50%;
+        height: 3rem;
+        display: flex;
+        justify-content: center;
+    }
+
+    .btn-suivant-contenu button{
+    font-size: 25px;
+    font-weight: 530;
+    color: #0072b5;
+    padding: 10px  20px;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.63s ease;
+    }
+
+    .btn-suivant-contenu button:hover {
+        color: aqua;
+        background:rgb(71, 71, 219);
+    }
+
+
+    .game-details-container h1{
+        display: flex;
+        font-size: 30px;
+        
+    }
+
+
+    /*Display du quizz sur les couleurs*/
+
+    h1 {
+        margin-bottom: 40px;
+        font-size: 60px;
+        font-family: 'Libre Baskerville', serif;
+    }
+
+    .wrapper{
+        font-size: 30px;
+        width: max-content;
+        background-color: rgb(255, 255, 255);
+        padding: 30px;
+        border-radius: 15px;
+    }
+
+    #couleur {
+        width: 100%;
+        height: 200px;
+        margin: 20px 0;
+        border-radius: 5px;
+    }
+
+    .reponses{
+        display: grid;
+        grid-template-columns: repeat(2, 250px);
+        gap: 20px;
+    }
+
+    .reponse{
+        padding: 20px 40px;
+        background-color:cornflowerblue;
+        color: white;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: all 0.4s ease;
+    }
+
+    .reponse:hover{
+        background-color:darkcyan;
+    }
+
+    .score{
+        margin-top: 60px;
+        margin-bottom: 20px;
+        font-size: 22px;
+    }
+
+
+    .reponsesImg{
+        display: grid;
+        grid-template-columns: repeat(2, 250px);
+        gap: 20px;
+    }
+
+    .reponseImg{
+        padding: 20px 40px;
+        background-color:cornflowerblue;
+        color: white;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: all 0.4s ease;
+    }
+
+    .reponseImg:hover{
+        background-color:darkcyan;
+    }
+
+
+
+
+
+
+    
+
+   
+
+    
+
+   
+    
+
+
+
+
+    
+    
 
 
 

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>MotsPassant - Connectez-vous</title>
+    <title>MotsPassant</title>
 	<link rel="stylesheet" type="text/css" href="css/index_dark.css" id = "style1">
 	<link rel="stylesheet" type="text/css" href="css/index_light.css" id = "style2">
 	<link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
@@ -10,7 +10,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-	<header>
+    <header>
         <div class="navbar">
             <div class="logo"><a href="index.html">MotsPassant</a></div>
             <ul class="menu">
@@ -35,35 +35,37 @@
 			</svg>
 		  </button>
     </header>
-	<div class="container">
-		<div class="login-content">
-			<form action="index.html">
-				<h2 class="title">Bienvenue</h2>
-           		<div class="input-div one">
-           		   <div class="i">
-           		   		<i class="fas fa-user"></i>
-           		   </div>
-           		   <div class="div">
-           		   		<h5>Nom d'utilisateur</h5>
-           		   		<input type="text" class="input">
-           		   </div>
-           		</div>
-           		<div class="input-div pass">
-           		   <div class="i"> 
-           		    	<i class="fas fa-lock"></i>
-           		   </div>
-           		   <div class="div">
-           		    	<h5>Mot de passe</h5>
-           		    	<input type="password" class="input">
-            	   </div>
-            	</div>
-            	<a href="#" id="mdpOublie">Mot de passe oublié?</a>
-            	<input type="submit" class="btn" value="Connectez-vous">
-				<h5> Vous n'avez pas de compte ?</h6>
-					<a class = "signin" id= "creerCompte" href="#" >Créez un compte </a>
-            </form>
+    <div class="dot_container">
+        <span class="dot" id="level"></span>
+        <span class="dot" data-text="Niveau x appuyez sur le bouton vert pour commencer"></span>
+        <span class="dot" data-text="This is the text for dot 2"></span>
+        <span class="dot" data-text="This is the text for dot 3"></span>
+        <span class="dot" data-text="This is the text for dot 4"></span>
+        <span class="dot" id="level">></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot" id="level">></span> 
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot" id="level">></span> 
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot" id="level">></span>
+    </div>
+    <div class="popup">
+        <div class="popup-content">
+            <p class="popup-text"></p>
+            <button class="popup-button"></button>
         </div>
     </div>
+
+
     <script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>

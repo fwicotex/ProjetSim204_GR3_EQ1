@@ -7,6 +7,11 @@ const path = document.querySelector('svg path');
 const toggleBtn = document.querySelector('.toggle_btn')
 const toggleBtnIcon = document.querySelector('.toggle_btn i')
 const dropDownMenu = document.querySelector('.dropdown_menu')
+const dots = document.querySelectorAll('.dot');
+const popup = document.querySelector('.popup');
+const popupContent = document.querySelector('.popup-content');
+const popupText = document.querySelector('.popup-text');
+const popupButton = document.querySelector('.popup-button');
 
 style1.disabled = true
 
@@ -62,5 +67,29 @@ avatars.forEach((img) => {
 		img.setAttribute('tabindex', '0');
 		img.focus();
 	});
-}); 
+});
+ 
 
+function validateForm() {
+	var password = document.getElementById("password").value;
+	var confirmPassword = document.getElementById("confirmPassword").value;
+	if (password != confirmPassword) {
+	  alert("Passwords do not match!");
+	  return false;
+	}
+	return true;
+  }
+
+  
+  dots.forEach(dot => {
+    dot.addEventListener('click', () => {
+        popupText.textContent = dot.getAttribute('data-text');
+        popup.style.display = 'block';
+    });
+});
+
+window.addEventListener('click', (e) => {
+    if (e.target == popup) {
+        popup.style.display = 'none';
+    }
+});

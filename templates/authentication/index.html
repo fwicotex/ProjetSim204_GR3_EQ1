@@ -1,0 +1,98 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MotsPassant - Créer un compte</title>
+	<link rel="stylesheet" type="text/css" href="{% static 'css/index_dark.css' %}" id = "style1">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/index_light.css' %}" id = "style2">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+	<script src="https://kit.fontawesome.com/a81368914c.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<header>
+	<div class="navbar">
+		<div class="logo"><a href="/accueil">MotsPassant</a></div>
+		<ul class="menu">
+			<li><a href="/jeuxcouleur"> Quiz de couleur</a></li>
+			<li><a href="/jeuximage"> Quiz d'objet général</a></li>
+		</ul>
+		<a href="#" class="action_btn">S'incrire</a>
+		<div class="toggle_btn">
+			<i class="fa-solid fa-bars"></i>
+		</div>
+	</div>
+	<div class="dropdown_menu">
+		<li><a href="/propos"> À propos de nous</a></li>
+		<li><a href="/jeuxcouleur"> Quiz de couleur</a></li>
+		<li><a href="/jeuximage"> Quiz d'objet général</a></li>
+		<li><a href="#" class="action_btn">S'incrire</a></li>
+	</div>
+	<button id = "change-theme" class="theme" title = "Theme">
+		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id = "sun">
+			<path xmlns="http://www.w3.org/2000/svg" d="M17.75,4.09L15.22,6.03L16.13,9.09L13.5,7.28L10.87,9.09L11.78,6.03L9.25,4.09L12.44,4L13.5,1L14.56,4L17.75,4.09M21.25,11L19.61,12.25L20.2,14.23L18.5,13.06L16.8,14.23L17.39,12.25L15.75,11L17.81,10.95L18.5,9L19.19,10.95L21.25,11M18.97,15.95C19.8,15.87 20.69,17.05 20.16,17.8C19.84,18.25 19.5,18.67 19.08,19.07C15.17,23 8.84,23 4.94,19.07C1.03,15.17 1.03,8.83 4.94,4.93C5.34,4.53 5.76,4.17 6.21,3.85C6.96,3.32 8.14,4.21 8.06,5.04C7.79,7.9 8.75,10.87 10.95,13.06C13.14,15.26 16.1,16.22 18.97,15.95M17.33,17.97C14.5,17.81 11.7,16.64 9.53,14.5C7.36,12.31 6.2,9.5 6.04,6.68C3.23,9.82 3.34,14.64 6.35,17.66C9.37,20.67 14.19,20.78 17.33,17.97Z"/>
+		</svg>
+	  </button>
+</header>
+	<div class="container">
+		<div class="login-content">
+			<form method="POST" action ="">
+					{% csrf_token %}
+				<img src="{% static 'css/images/avatar-male.svg' %}">
+				<img src="{% static 'css/images/avatar-female.svg' %}">
+				<h2 class="title">Bienvenue !</h2>
+				
+                <div class="input-div pass2">
+					<div class="i"> 
+						 <i class="fas fa-lock"></i>
+					</div>
+					<div class="div">
+						 <h5>username</h5>
+						 {{form.username}}
+				 </div>	
+			  </div>
+				<div class="input-div one">
+                    <div class="i">
+                            <i class="fas fa-at"></i>
+                    </div>
+                    <div class="div">
+                            <h5>Courriel</h5>
+                            {{form.email}}
+                    </div>
+                 </div>
+
+           		<div class="input-div pass">
+           		   <div class="i"> 
+           		    	<i class="fas fa-lock"></i>
+           		   </div>
+           		   <div class="div">
+           		    	<h5>Mot de passe</h5>
+           		    	{{form.password1}}
+            	   </div>
+            	</div>
+
+                <div class="input-div pass2">
+                    <div class="i"> 
+                         <i class="fas fa-lock"></i>
+                    </div>
+                    <div class="div">
+                         <h5>Confirmez le mot de passe</h5>
+                         {{form.password2}}
+                    </div>
+                </div>	
+
+				{{form.errors}}
+
+            	<input type="submit" class="btn" value="Créer le compte">
+				<h5> Vous avez déjà un compte ?</h6>
+				<a class = "signin" href="/signin" >Connectez-vous </a>
+            </form>
+			
+			<div> </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="{% static 'css/js/main.js' %}"></script>
+</body>
+</html>
+

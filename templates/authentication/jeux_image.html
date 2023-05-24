@@ -1,0 +1,59 @@
+{% load static %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>MotsPassant - Quiz général</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/stylejeuimage.css' %}">
+    <script>
+            var img1 = "{% static 'css/images/Image1.png' %}"
+            var img2 = "{% static 'css/images/Image2.png' %}"
+            var img3 = "{% static 'css/images/Image3.png' %}"
+            var img4 = "{% static 'css/images/Image4.jpg' %}"
+            var img5 = "{% static 'css/images/pomme.img.png' %}"
+            var img6 = "{% static 'css/images/Image5.jpg' %}"
+            var img7 = "{% static 'css/images/Image6.png' %}"
+            var img8 = "{% static 'css/images/Image7.png' %}"
+            var img9 = "{% static 'css/images/Image8.png' %}"
+            var img10 = "{% static 'css/images/Image9.jpg' %}"
+            var img11 = "{% static 'css/images/Image10.png' %}"
+            var img12 = "{% static 'css/images/Image11.jpg' %}"
+            var img13 = "{% static 'css/images/Image12.jpg' %}"
+            var img14 = "{% static 'css/images/Image13.jpg' %}"
+            var img15 = "{% static 'css/images/Image14.jpg' %}"
+            var img15 = "{% static 'css/images/Image15.jpg' %}"
+    </script>
+    
+    
+</head>
+<body class="">
+    <div class="container">
+        <div id="question-container" class = "hide">
+            
+            <div id="question">Question</div>
+            <img id="image"></img> 
+            <div id="answer-buttons" class="btn-grid">
+                <button class="btn">Answer1</button>
+                <button class="btn">Answer2</button>
+                <button class="btn">Answer3</button>
+                <button class="btn">Answer4</button>
+            </div>
+
+            <div class="score">
+                Votre Score : <span id = "score">0</span>
+            </div>
+            
+        </div>
+        
+        <div class="controls">
+            <button id="start-btn" class="start-btn btn">Start</button>
+            <button id="next-btn" class="next-btn btn hide">Next</button>
+        </div>
+    </div>
+    <script src="{% static 'css/js/scriptsjeuimage.js' %}"></script>
+</body>
+</html>
